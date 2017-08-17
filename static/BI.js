@@ -1,6 +1,7 @@
 (function () {
 	//グラフ作成可能範囲にあるか判断
 	var graph_field_flag = false;
+<<<<<<< HEAD
 	var column_list = {};
 	
 	$('.column_elm').on('click', function(){
@@ -9,6 +10,10 @@
 		}
 	});
 	
+=======
+	
+	$('button').on('click', onClickButton);
+>>>>>>> dev
 	$(".column_elm").draggable()
 	
 	$(".graph_field").droppable({
