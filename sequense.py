@@ -20,13 +20,8 @@ def uploaded_file():
        f = request.files['file']
        f.save(secure_filename(f.filename))
        read_data = pd.read_csv(f.filename)
-       read_data.columns
-                        
-       return 'file uploaded successfully'
+       
+       return render_template('main.html',name=read_data.columns, message=read_data)
 
-@app.route("/")
-def index():
-    return "column"
-
-if　__name__ == "__main__":
+if __name__ == "__main__":
     app.run()
