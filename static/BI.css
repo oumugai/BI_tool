@@ -3,7 +3,26 @@
 	overflow: hidden;
 }
 
+.graph_field{
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: #dddddd;
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;
+}
+
+#graph{
+	top: 30px;
+	left: 10px;
+	height: 500px;
+	width: 750px;
+}
+
 .column_box{
+	float: left;
 	height: 500px;
 	width: 250px;
     border: 2px solid #da4033;
@@ -34,3 +53,5 @@
     margin: 4em 0;
     padding: 0.5em;
 }
+
+
