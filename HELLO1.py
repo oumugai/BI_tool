@@ -5,9 +5,18 @@ Created on Thu Aug 17 13:15:28 2017
 
 @author: yuya
 """
-# app.py
-@app.route('/')
-def index():
-    #template/index.html  のテンプレートを使う
-    #message という変数にHelloと代入した状態でテンプレート内で使う
-    return render_template('index.html',message="Hello")
+from flask import Flask, request
+app = Flask(__name__)
+
+@app.route('/upload',methods=['POST'])
+def upload():
+    the_file = request.files['the_file']
+    the_file.save("./" + the_file.filename)
+    print(request.form['other_data'])
+    return ""
+
+if __name__  == '__main__':
+    app.run()
+
+
+
