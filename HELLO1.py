@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Aug 17 13:15:28 2017
-
 @author: yuya
 """
 from flask import Flask, request
