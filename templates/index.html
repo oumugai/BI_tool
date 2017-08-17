@@ -10,12 +10,21 @@
 		<title>BI_tool</title>
 	</head>
 	<body>
-		<button class="upload_button">Upload File</button>
+		<form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data">
+			<input type = "file" name = "file" />
+			<input type = "submit"/>
+		</form>
 		
-		<div class="column_box">
-			<div class="column_elm" id="red-box">red</div>
-			<div class="column_elm" id="blue-box">blue</div>
-			<div class="column_elm" id="yellow-box">yellow</div>
+		<div class="field">
+			<div class="column_box">
+				<div class="column_elm" id="red-box">red</div>
+				<div class="column_elm" id="blue-box">blue</div>
+				<div class="column_elm" id="yellow-box">yellow</div>
+			</div>
+		</div>
+		
+		<div class="graph_field">
+			<canvas id="graph"></canvas>
 		</div>
 		
 		<script src="../static/jquery.js"></script>
