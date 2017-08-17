@@ -1,0 +1,36 @@
+.upload_button{
+	position:relative;
+	overflow: hidden;
+}
+
+.column_box{
+	height: 500px;
+	width: 250px;
+    border: 2px solid #da4033;
+    border-radius: 4px;
+    margin: 2em 0;
+    padding: 2em;
+    position: relative;
+}
+
+.column_box::before{
+    background-color: #fff;
+    color: #da4033;
+    content: "column";
+    font-weight: bold;
+    left: 1em;
+    padding: 0.5em;
+    position: absolute;
+    top: -1em;
+}
+
+.column_elm{
+	float: left;
+    background-color: #8d1e47;
+    border: 2px dashed #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 0 4px #8d1e47;
+    color: #fff;
+    margin: 4em 0;
+    padding: 0.5em;
+}
